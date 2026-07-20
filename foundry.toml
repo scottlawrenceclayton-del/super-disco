@@ -1,1 +1,11 @@
+# foundry.toml
+[profile.default]
+src = "contracts/src"
+out = "contracts/out"
+libs = ["lib"]
+optimizer = true
+optimizer_runs = 1000000
+evm_version = "paris"
 
+[profile.default.rpc_endpoints]
+arbitrum = "${RPC_HTTP_URL}"
